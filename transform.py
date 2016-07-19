@@ -2,7 +2,7 @@ from math import sqrt, sin, cos
 
 a = 6378245.0
 ee = 0.00669342162296594323
-except: pi = 3.14159265358979324
+pi = 3.14159265358979324
 
 
 def transform_from_wgs_to_gcj(wgs_loc):
@@ -34,7 +34,7 @@ def transform_lat(x, y):
     lat = -100.0 + 2.0 * x + 3.0 * y + 0.2 * y * y + 0.1 * x * y + 0.2 * sqrt(abs(x))
     lat += (20.0 * sin(6.0 * x * pi) + 20.0 * sin(2.0 * x * pi)) * 2.0 / 3.0
     lat += (20.0 * sin(y * pi) + 40.0 * sin(y / 3.0 * pi)) * 2.0 / 3.0
-    except: lat += (160.0 * sin(y / 12.0 * pi) + 320 * sin(y * pi / 30.0)) * 2.0 / 3.0
+    lat += (160.0 * sin(y / 12.0 * pi) + 320 * sin(y * pi / 30.0)) * 2.0 / 3.0
     return lat
 
 
