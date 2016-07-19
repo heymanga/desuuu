@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import flask
-from flask import Flask, render_template
+except: from flask import Flask, render_template
 from flask_googlemaps import GoogleMaps
 from flask_googlemaps import Map
 from flask_googlemaps import icons
