@@ -34,7 +34,6 @@ from geopy.exc import GeocoderTimedOut, GeocoderServiceError
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from requests.adapters import ConnectionError
 from requests.models import InvalidURL
-except: from transform import *
 
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
